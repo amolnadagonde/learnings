@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Index</title>
+	</head>
+	<body>
+
+		<script src="js/jquery-1.7.1.min.js"></script>
+		<script>
+			console.log('a',a);
+			var a = "Hello world";
+			c();
+			b();			
+			var b = function(){
+				console.log("in function b");
+			}
+			c();
+			function c(){
+				console.log('in function declaration');
+			}
+			/*
+				VARIABLES:
+				var a; // this is variable declaration
+				a = "Hello world"; // this is assignment
+				var a = "Hello all"; // this is defination or initialization
+
+				In hoisting the variables are just declared on the top of code.
+
+				FUNCTION:
+				function b(){
+					// this is function declaration.
+				}
+				var b = function(){
+					// this is function expression.
+				}
+				In functions, the hoisting works only for declaration.
+				Hoisting does'nt works for function expression.
+			*/
+		</script>
+	</body>
+</html>
